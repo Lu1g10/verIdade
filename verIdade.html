@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verificador de idades</h1>
+    <div>
+        <h2>Sala de aula - Aprendendo DOM</h2>
+        <fieldset>
+            <legend>Verificador de idades</legend>
+            <div>
+                <p>
+                    Ano de nascimento:
+                    <input type="number" name="nasc" id="nasc" min="1920" max="2023">
+                </p>
+                <p>
+                    Sexo: 
+                    <input type="radio" name="sexo" id="homem" value="homem" checked><label for="homem"> Masculino</label>
+                    <input type="radio" name="sexo" id="mulher" value="mulher"><label for="mulher"> Feminino</label>
+                </p>
+                <p>
+                    <input type="button" onclick="verificar()" value="Verificar">
+                </p>
+            </div>
+            <div id="res">
+                <p>A resposta será exibida aqui...</p>
+            </div>       
+        </fieldset>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
